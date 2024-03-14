@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/logoss.JPG"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <div class="logo-container">
+          <img src="images/logoss.JPG" alt="Logo" class="logo">
+          <p class="slogan">Redefining Insights, Transforming possibilities</p>
+      </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="projects.html"> OUR PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!------------contact us-->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.814243066032!2d36.820103774132455!3d-1.2854457356234446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d654927677%3A0x885b12c9de76d980!2sTwentieth%20Century%20Plaza%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1699542105809!5m2!1sen!2ske"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section>
+      <div class="contact-us">
+        <div class="row">
+          <div class="contact-col">
+            <div>
+              <i class="fa fa-home"></i>
+              <span>
+                <h5>Mama Ngina st.,20th Century Plaza</h5>
+                <p>Nairobi, Kenya</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <span>
+                <h5>+254 792572728 / +254 708660681</h5>
+                <p>Monday to Saturday, 8Am to 5PM</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-envelope-o"></i>
+              <span>
+                <h5>info@GeoInnovate.co.ke</h5>
+                <p>Email us your queries</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="form-handler.php" method="post">
+              <input type="text" name="name" placeholder="Enter your name" required>
+              <input type="Email" name="email" placeholder="Enter your email address" required>
+              <input type="text" name="subject" placeholder="Enter your subject" required>
+              <textarea rows="8"  name="Message"placeholder="Message" required></textarea>
+              <button type="submit" class="hero-btn red-btn">Send Message </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+ <!--------footer-->
+ <section class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-col subscribe">
+        <p>Stay up to date with all the GeoInnovate Consultancy news</p>
+        <form action="#" class="subscribe-form">
+          <input required type="email" name="email" placeholder="Enter your email address">
+          <button type="submit" class="hero-btn red-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-col quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT US</a></li>
+                  <li><a href="projects.html"> OUR PORTFOLIO</a></li>
+                  <li><a href="contact.html">CONTACT</a></li> 
+        </ul>
+      </div>
+    </div>
+  </div>
+
+              
+              <div class="social-media">
+                  <ul>
+                      <li><a href="https://www.facebook.com/profile.php?id=61556651285563"><i class="fa fa-facebook-f"></i></a></li>
+                      <li><a href="https://twitter.com/AntonnyKavoi"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://github.com/Kavoila/"><i class="fa fa-github"></i></a></li>
+                      <li><a href="https://chat.whatsapp.com/GrPQCMmWhxsKjPr7eWV0dE" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/antony-kavoi-9323a91b0"
+                          ><i class="fa fa-linkedin"></i></a
+                        >
+                      </li>
+                  </ul>
+              </div>
+          </div>
+         
+      </div>
+      <div class="copyright">
+          &copy; 2024 All rights reserved by GeoInnovate Consultancy Ltd. | Made by Kavoi.A
+      </div>
+    </section>
+
+    <!------JAvascript for toogle menu-------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
